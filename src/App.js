@@ -2,22 +2,38 @@ import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import { fetchVotes } from './fetchVotes';
-import { TableChart, visualize } from './TableChart';
+import { TableChart } from './TableChart';
 import './App.css';
+
+class Spinner extends PureComponent {
+  render() {
+    return <div id="loading" className="loading"><p>Почекайте...</p></div>;
+  }
+}
 
 class ResultsRoute extends PureComponent {
   componentDidMount() {
     const { orgId, year } = this.props.match.params;
+    this.setState({ loading: true, meta: null });
     fetch('/data/metadata.json').then(data => data.json()).then(metadata => {
       const meta = metadata[`${orgId}-${year}`];
-      this.setState({ meta })
-      fetchVotes(meta).then(data => visualize(data, meta)); 
+      this.setState({ loading: true, meta });
+      fetchVotes(meta).then(data => {
+        const { votersCount, candidatesCount, votes } = data;
+        this.setState({
+          loading: false,
+          meta: { ...meta, votersCount, candidatesCount },
+          data: votes
+        });
+      }); 
     });
   }
 
   render() {
     if (!this.state || !this.state.meta) return null;
-    const { radaTitle, members, year } = this.state.meta;
+    if(this.state.loading) return <Spinner />;
+    const { radaTitle, members, year, votersCount, candidatesCount } = this.state.meta;
+
     return (<>
       <Link to='/'>Інші голосування</Link>
       <h1>Результати рейтингового інтернет-голосування</h1>
@@ -25,10 +41,10 @@ class ResultsRoute extends PureComponent {
       {radaTitle}<br />
       у {year} році
       </h2>
-      <div><p>Усього прийняло участь: <span id="voters-count"></span></p></div>
+      <div><p>Усього прийняло участь: <span id="voters-count">{votersCount}</span></p></div>
       <div><p>Кількість місць: {members}</p></div>
-      <div><p>Кількість кандидатів: <span id="candidates-count"></span></p></div>
-      <TableChart />
+      <div><p>Кількість кандидатів: <span id="candidates-count">{candidatesCount}</span></p></div>
+      <TableChart meta={this.state.meta} data={this.state.data} />
     </>);
   }
 }

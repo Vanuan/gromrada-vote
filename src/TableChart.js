@@ -41,6 +41,14 @@ export function visualize(candidates, { domain, photoBasePath }) {
 
 
 export class TableChart extends Component {
+  componentDidMount() {
+    visualize(this.props.data, this.props.meta);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    visualize(nextProps.data, nextProps.meta);
+  }
+
   render(props) {
     return <div className="chart"></div>;
   }

@@ -3,8 +3,6 @@ function parseVotes(body, data) {
   var candidates = data.candidates;
   candidates.forEach((candidate) => { votes[candidate.id] = { votes: 0, info: candidate }; });
   var voters = body.split('\n').filter((voter) => voter.trim());
-  document.getElementById("voters-count").innerText = voters.length;
-  document.getElementById("candidates-count").innerText = Object.keys(candidates).length;
   voters.forEach((voter) => {
     const VOTES_REGEX = /SEL=(\d+(?:,\d+)*)/;
     var vote = voter.match(VOTES_REGEX);
@@ -20,7 +18,11 @@ function parseVotes(body, data) {
       });
     }
   });
-  return votes;
+  return {
+    votersCount: voters.length,
+    candidatesCount: Object.keys(candidates).length,
+    votes
+  };
 }
 
 export function fetchVotes({ candidatesUrl, reportUrl }) {
