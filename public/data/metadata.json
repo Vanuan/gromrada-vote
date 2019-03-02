@@ -1,0 +1,92 @@
+{
+  "nabu-2015": {
+    "year": "2015",
+    "orgId": "nabu",
+    "source": "",
+    "photoBasePath": "/candidates/photos/",
+    "candidatesUrl": "/data/nabu/2015/candidates.json",
+    "reportUrl": "/data/nabu/2015/public_report.txt",
+    "radaTitle": "при НАБУ",
+    "members": 15
+  },
+  "nabu-2016": {
+    "year": "2016",
+    "orgId": "nabu",
+    "source": "",
+    "photoBasePath": "/candidates/photos/",
+    "candidatesUrl": "/data/nabu/2016/candidates.json",
+    "reportUrl": "/data/nabu/2016/public_report.txt",
+    "radaTitle": "при НАБУ",
+    "members": 15
+  },
+  "nabu-2016-2": {
+    "year": "2016-2",
+    "orgId": "nabu",
+    "source": "",
+    "photoBasePath": "/candidates/photos/",
+    "candidatesUrl": "/data/nabu/2016-2/candidates.json",
+    "reportUrl": "/data/nabu/2016-2/public_report.txt",
+    "radaTitle": "при НАБУ",
+    "members": 15
+  },
+  "nabu-2017": {
+    "year": "2017",
+    "orgId": "nabu",
+    "source": "",
+    "photoBasePath": "/candidates/photos/",
+    "candidatesUrl": "/data/nabu/2017/candidates.json",
+    "reportUrl": "/data/nabu/2017/public_report.txt",
+    "radaTitle": "при НАБУ",
+    "members": 15
+  },
+  "nabu-2018": {
+    "year": "2018",
+    "orgId": "nabu",
+    "source": "",
+    "photoBasePath": "/candidates/photos/",
+    "candidatesUrl": "/data/nabu/2018/candidates.json",
+    "reportUrl": "/data/nabu/2018/public_report.txt",
+    "radaTitle": "при НАБУ",
+    "members": 15
+  },
+  "menr-2016": {
+    "year": "2016",
+    "orgId": "menr",
+    "source": "",
+    "photoBasePath": "/candidates/photos/",
+    "candidatesUrl": "/data/menr/2016/candidates.json",
+    "reportUrl": "/data/menr/2016/public_report.txt",
+    "radaTitle": "при Міністерстві екології та природних ресурсів України",
+    "members": 35
+  },
+  "moz-2017": {
+    "year": "2017",
+    "orgId": "moz",
+    "source": "gromrada.moz.gov.ua",
+    "photoBasePath": "/candidates/photos",
+    "candidatesUrl": "/data/moz/2017/candidates.json",
+    "reportUrl": "/data/moz/2017/public_report.txt",
+    "radaTitle": "при Міністерстві охорони здоров'я",
+    "members": 35
+  },
+  "arma-2017": {
+    "year": "2017" ,
+    "orgId": "arma",
+    "source": "voting.arma.gov.ua",
+    "photoBasePath": "https://voting.arma.gov.ua/candidates/photo/",
+    "candidatesUrl": "/data/arma/2017/candidates.json",
+    "reportUrl": "/data/arma/2017/public_report.txt",
+    "radaTitle": "при АРМА",
+    "members": 9
+  },
+  "mva-2019": {
+    "year": "2019",
+    "orgId": "mva",
+    "source": "gromrada.mva.gov.ua",
+    "photoBasePath": "https://gromrada.mva.gov.ua/candidates/small/",
+    "candidatesUrl": "/data/mva/2019/candidates.json",
+    "reportUrl": "/data/mva/2019/public_report.txt",
+    "radaTitle": "при Міністерстві у справах ветеранів України",
+    "members": 35
+  }
+}

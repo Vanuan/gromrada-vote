@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  node:
+    build: ./dockerfiles/node
+    volumes:
+      - .:/src
+    working_dir: /src
+    expose: ["3000"]
+    ports: ["3001:3000"]
