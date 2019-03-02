@@ -7,7 +7,7 @@ import './App.css';
 
 class Spinner extends PureComponent {
   render() {
-    return <div id="loading" className="loading"><p>Почекайте...</p></div>;
+    return <div id="loading" className="loading"><p>Підрахунок голосів...</p></div>;
   }
 }
 
