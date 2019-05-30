@@ -18,9 +18,9 @@ export function visualize(candidates, { domain, photoBasePath }) {
           .attr("class", "datarow");
 
   row.append("td").text((c) => c.place);
-  row.append("td").append("img").attr("src", function(c) {
-    return photoBasePath + c.info.photo;
-  });
+  row.append("td").filter(function(c){ return c.info.photo !== undefined }).append("img").attr("src", function(c) {
+    return photoBasePath || "" + c.info.photo;
+  }).attr("width", 100);
   var info = row.append("td");
   info.style("width", function(c) { return "100px"; });
   info.append("p")

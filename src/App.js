@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom';
 
 import { fetchVotes } from './fetchVotes';
 import { TableChart } from './TableChart';
@@ -84,6 +84,7 @@ class App extends PureComponent {
       <>
         <Header />
         <Route path="/" exact component={IndexRoute} />
+        <Route path="/:url*" exact strict render={props => <Redirect to={`${props.location.pathname}/`}/>}/>
         <Route path="/:orgId/:year" component={ResultsRoute} />
       </>
     </Router>);
