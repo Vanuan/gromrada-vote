@@ -80,17 +80,23 @@
     {
       "id": "16",
       "name": " Карпюк Олександр Андрійович",
-      "ngo_name": "ГО \"Ксенос\""
+      "ngo_name": "ГО \"Ксенос\"",
+      "photo": "16.jpg",
+      "social": "https://www.facebook.com/serg.marco"
     },
     {
       "id": "17",
       "name": " Козаченко Тетяна Анатоліївна",
-      "ngo_name": "ГО \"Громадський люстраційний комітет\""
+      "ngo_name": "ГО \"Громадський люстраційний комітет\"",
+      "photo": "17.jpg",
+      "social": "https://www.facebook.com/profile.php?id=100003126473799"
     },
     {
       "id": "18",
       "name": " Колумбет Антон Сергійович",
-      "ngo_name": "ГО \"Астартес\""
+      "ngo_name": "ГО \"Астартес\"",
+      "photo": "18.jpg",
+      "social": "https://www.facebook.com/anton.kolumbet"
     },
     {
       "id": "19",
@@ -110,7 +116,9 @@
     {
       "id": "22",
       "name": " Кузьмич Богдан Володиморович",
-      "ngo_name": "ГО \"Астартес\""
+      "ngo_name": "ГО \"Астартес\"",
+      "photo": "22.jpg",
+      "social": "https://www.facebook.com/bohdan.kuzmych"
     },
     {
       "id": "23",
@@ -142,7 +150,9 @@
     {
       "id": "28",
       "name": " Мінко Володимир Дмитрович",
-      "ngo_name": "ГО \"Ветеранське Братерство\""
+      "ngo_name": "ГО \"Ветеранське Братерство\"",
+      "photo": "28.jpg",
+      "social": "https://www.facebook.com/lexveritasss"
     },
     {
       "id": "29",
@@ -162,7 +172,9 @@
     {
       "id": "32",
       "name": " Помазан Богдан Юрійович",
-      "ngo_name": "ГО \"Ксенос\""
+      "ngo_name": "ГО \"Ксенос\"",
+      "photo": "32.jpg",
+      "social": "https://www.facebook.com/pomazanbogdan"
     },
     {
       "id": "33",
@@ -172,7 +184,9 @@
     {
       "id": "34",
       "name": " Савчук Марк Сергійович",
-      "ngo_name": "ГО \"Ксенос\""
+      "ngo_name": "ГО \"Ксенос\"",
+      "photo": "34.jpg",
+      "social": "https://www.facebook.com/profile.php?id=100006136038244"
     },
     {
       "id": "35",

@@ -26,16 +26,16 @@ export function visualize(candidates, { domain, photoBasePath }) {
   info.append("p")
     .text(function(c) { return c.info.name });
   info.append("p")
-    .text(function(c) { return c.info.org });
+    .text(function(c) { return c.info.org || c.info.ngo_name });
   info.append("p").append("a")
     .text(function(c) { return c.info.site })
     .attr("href", (c) => c.info.site);
-  info.append("p").append("a")
+  info.filter(function(c) { return c.info.social !== undefined }).append("p").append("a")
     .text(function(c) { return "профайл у соцмережі"; })
     .attr("href", (c) => c.info.social);
   row.append("td")
     .append("div")
-    .style("width", function(c) { console.log(c);return x(c.votes) + "px"; })
+    .style("width", function(c) { return x(c.votes) + "px"; })
     .text(function(c) { return c.votes });
 }
 

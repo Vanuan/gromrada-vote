@@ -7,6 +7,14 @@
   color: #c1c1c1;
 }
 
+table {
+  border-collapse: collapse;
+}
+
+.datarow {
+  border-top: 1px solid #c1c1c1;
+}
+
 #loading {
   visibility: visible;
   width: 100%;
