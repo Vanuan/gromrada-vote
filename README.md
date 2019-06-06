@@ -1,3 +1,7 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/660fd733-47ec-44a9-8cd3-3a2260d9d2d8/deploy-status)](https://app.netlify.com/sites/gromrada/deploys)
+
+# Результати інтернет-голосування згідно відкритого протоколу
+
 This project requires docker
 
 ## Available Scripts
