@@ -1,4 +1,4 @@
-import { calcVotes } from './calcVotes.js';
+import { calcVotes } from './src/calcVotes.js';
 
 const reportFilename = 'public/data/nabu/2020/public_report.txt';
 const candidatesFilename = 'public/data/nabu/2020/candidates.json';
