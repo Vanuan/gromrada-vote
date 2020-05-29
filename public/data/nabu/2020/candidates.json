@@ -5,7 +5,7 @@
       "name": " Апасов Василь Олександрович",
       "ngo_name": "ГО «Рада громадського контролю»",
       "photo": "1.jpg",
-      "social": "https://www.facebook.com/vasiliyapasof"
+      "social": "https://www.facebook.com/vasiliyapasoff"
     },
     {
       "id": "2",
@@ -35,7 +35,9 @@
     {
       "id": "7",
       "name": " Діордіца Назар Русланович",
-      "ngo_name": "ГО «Рада громадського контролю»"
+      "ngo_name": "ГО «Рада громадського контролю»",
+      "photo": "7.jpg",
+      "social": "https://www.facebook.com/maks.nazaroff"
     },
     {
       "id": "8",
@@ -95,7 +97,9 @@
     {
       "id": "19",
       "name": " Кузьмич Богдан Володимирович",
-      "ngo_name": "ГО «Демократична Сокира Орди»"
+      "ngo_name": "ГО «Демократична Сокира Орди»",
+      "photo": "19.jpg",
+      "social": "https://www.facebook.com/bohdan.kuzmych"
     },
     {
       "id": "20",
@@ -135,7 +139,9 @@
     {
       "id": "27",
       "name": " Савчук Марк Сергійович",
-      "ngo_name": "ГО «Демократична Сокира Орди»"
+      "ngo_name": "ГО «Демократична Сокира Орди»",
+      "photo": "27.jpg",
+      "social": "https://www.facebook.com/profile.php?id=100006136038244"
     },
     {
       "id": "28",

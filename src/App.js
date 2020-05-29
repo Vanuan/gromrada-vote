@@ -81,12 +81,12 @@ class App extends PureComponent {
 
   render() {
     return (<Router>
-      <>
+      <div className="centerColumn">
         <Header />
         <Route path="/" exact component={IndexRoute} />
         <Route path="/:url*" exact strict render={props => <Redirect to={`${props.location.pathname}/`}/>}/>
         <Route path="/:orgId/:year" component={ResultsRoute} />
-      </>
+      </div>
     </Router>);
   }
 }

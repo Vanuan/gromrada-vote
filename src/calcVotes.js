@@ -1,7 +1,7 @@
 function parseVotes(body, data) {
   var votes = {};
   var candidates = data.candidates;
-  candidates.forEach((candidate) => { votes[candidate.id] = { votes: 0, info: candidate }; });
+  candidates.forEach((candidate) => { votes[candidate.id] = { votes: 0 }; });
   var voters = body.split('\n').filter((voter) => voter.trim());
   voters.forEach((voter) => {
     const VOTES_REGEX = /SEL=(\d+(?:,\d+)*)/;
