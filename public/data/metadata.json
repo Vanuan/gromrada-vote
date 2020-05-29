@@ -59,6 +59,17 @@
     "radaTitle": "при НАБУ",
     "members": 15
   },
+  "nabu-2020": {
+    "year": "2020",
+    "orgId": "nabu",
+    "source": "voting.nabu.gov.ua",
+    "photoBasePath": null,
+    "candidatesUrl": "/data/nabu/2020/candidates.json",
+    "reportUrl": "/data/nabu/2020/public_report.txt",
+    "resultsUrl": "/data/nabu/2020/results.json",
+    "radaTitle": "при НАБУ",
+    "members": 15
+  },
   "menr-2016": {
     "year": "2016",
     "orgId": "menr",

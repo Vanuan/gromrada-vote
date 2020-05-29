@@ -7,3 +7,10 @@ services:
     working_dir: /src
     expose: ["3000"]
     ports: ["3001:3000"]
+  deno:
+    build: ./dockerfiles/deno
+    volumes:
+      - .:/src
+    working_dir: /src
+    expose: ["3000"]
+    ports: ["3001:3000"]

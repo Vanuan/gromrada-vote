@@ -1,36 +1,17 @@
-function parseVotes(body, data) {
-  var votes = {};
-  var candidates = data.candidates;
-  candidates.forEach((candidate) => { votes[candidate.id] = { votes: 0, info: candidate }; });
-  var voters = body.split('\n').filter((voter) => voter.trim());
-  voters.forEach((voter) => {
-    const VOTES_REGEX = /SEL=(\d+(?:,\d+)*)/;
-    var vote = voter.match(VOTES_REGEX);
-    if(!vote) {
-      throw new Error(`Can't find vote info in ${voter}`);
-    } else {
-      vote[1].split(',').forEach((candidateId) => {
-        if(votes[candidateId] !== undefined) {
-          votes[candidateId].votes += 1;
-        } else {
-          console.error('vote for nonexisting candidate!', candidateId);
-        }
-      });
-    }
-  });
-  return {
-    votersCount: voters.length,
-    candidatesCount: Object.keys(candidates).length,
-    votes
-  };
-}
+import { calcVotes } from './calcVotes.js';
 
-export function fetchVotes({ candidatesUrl, reportUrl }) {
+export function fetchVotes({ candidatesUrl, reportUrl, resultsUrl }) {
+  if (resultsUrl) {
+    return fetch(resultsUrl).then(res => res.json()).then((results) => {
+      return results;
+    });
+  }
+  else
   return fetch(candidatesUrl).then((res) => res.json()).then((candidatesData) => {
     return fetch(reportUrl).then(function(res) {
       return res.text();
     }).then(function(body) {
-      return parseVotes(body, candidatesData);
+      return calcVotes({ publicReport: body, candidates: candidatesData });
     });
   });
 }
